@@ -6,6 +6,7 @@ import Controler from "./component/controler";
 function App() {
   const actions = ["top", "right", "bottom", "left", "Speed+", "Speed-"];
   const [action, setAction] = useState("");
+  // here to replace the @ip 
   const socket = io.connect("http://192.168.1.35:5000");
   const hundleAction = (action) => {
     console.log("Action shosen = ", action);
